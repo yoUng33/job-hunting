@@ -1,0 +1,60 @@
+#20.Valid Parentheses
+<https://leetcode.com/problems/valid-parentheses/>
+
+Easy
+
+Given a string containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid.
+
+An input string is valid if:
+
+Open brackets must be closed by the same type of brackets.
+Open brackets must be closed in the correct order.
+Note that an empty string is also considered valid.
+
+Example 1:
+
+    Input: "()"
+    Output: true
+Example 2:
+
+    Input: "()[]{}"
+    Output: true
+Example 3:
+
+    Input: "(]"
+    Output: false
+Example 4:
+
+    Input: "([)]"
+    Output: false
+Example 5:
+
+    Input: "{[]}"
+    Output: true
+    
+Related Topics: String;Stack
+
+Similar Questions: 
+    Generate Parentheses[Medium]
+    Longest Valid Parentheses[Hard]
+    Remove Invalid Parentheses[Hard]
+    Check If Word Is Valid After Substitutions[Medium]
+    
+Solution:
+用stack保存close parenthese。遍历s，每次遇到open parenthese，就push个对应close的到stack。当遇到close parenthese，就和stack.pop()对比。最后要检查stack是空的。
+    
+```java
+class Solution{
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack();
+        for(char c:s.toCharArray()){
+            if(c=='(') stack.push(')');
+            else if(c=='{') stack.push('}');
+            else if(c=='[') stack.push(']');
+            else if(stack.isEmpty() || stack.pop() != c) return false;
+        }
+        return stack.isEmpty();
+    }
+}
+```    
+  
