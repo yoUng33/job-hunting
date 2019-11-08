@@ -17,7 +17,7 @@ Related Topics: Array; Hash Table
 
 Similar Questions:  
     Medium [3Sum](./../medium/15_3Sum.md)  
-    Medium [4Sum]()  
+    Medium [4Sum](./../medium/18_4Sum.md)  
     Two Sum II - Input array is sorted[Easy]  
     Two Sum III - Data structure design[Easy]  
     Subarray Sum Equals K[Medium]  
