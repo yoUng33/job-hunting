@@ -23,8 +23,8 @@ Assume we are dealing with an environment which could only store integers within
 Related Topics: Math
 
 Similar Questions:  
-    String to Integer (atoi)[Medium]  
-    Reverse Bits[Easy]  
+    Medium[String to Integer (atoi)](./../medium/8_String&#32;to&#32;Integer&#32;(atoi).md)
+    Medium[Reverse Bits](./../easy/190_Reverse&#32;Bits.md)  
 
 Solution:  
 注意正负和Integer的范围。用long型变量ans记录结果。因为正的处理方便，先提取正负。每次循环，拿x的末尾x%10，加到ans里： ans = ans*10 + x%10。并检查新的ans在Integer范围内(Integer.MIN_VALUE ~ Integer.MAX_VALUE)。 
