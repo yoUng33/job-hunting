@@ -1,4 +1,4 @@
-1. Two Sum
+#1. Two Sum
 <https://leetcode.com/problems/two-sum/>
 
 Easy
@@ -15,18 +15,19 @@ Example:
 
 Related Topics: Array; Hash Table
 
-Similar Questions:
-    3Sum[Medium]  
-    4Sum[Medium]  
-    Two Sum II - Input array is sorted[Easy]  
-    Two Sum III - Data structure design[Easy]  
-    Subarray Sum Equals K[Medium]  
-    Two Sum IV - Input is a BST[Easy]
-    Two Sum Less Than K[Easy]  
+Similar Questions:  
+    Medium [3Sum](./../medium/15_3Sum.md)  
+    Medium [4Sum](./../medium/18_4Sum.md)  
+    Easy [Two Sum II - Input array is sorted](167_Two&#32;Sum&#32;II&#32;-&#32;Input&#32;array&#32;is&#32;sorted.md)  
+    Easy [Two Sum III - Data structure design]()
+    Medium [Subarray Sum Equals K](./../medium/560_Subarray&#32;Sum&#32;Equals&#32;K.md)
+    Easy [Two Sum IV - Input is a BST](./../easy/653_Two&#32;Sum&#32;IV&#32;-&#32;Input&#32;is&#32;a&#32;BST.md)
+    Easy [Two Sum Less Than K]()  
 
-Solution:  
-Use map to store nums and index. Check if target - nums[i] exists in the map.
+##Solution:  
+Use map to store nums and index. Check if target - nums[i] exists in the map.  
 
+O(Time): O(n)
 ```java
 class Solution {
     int[] result = new int[2];
