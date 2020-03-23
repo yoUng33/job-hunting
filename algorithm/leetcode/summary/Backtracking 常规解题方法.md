@@ -1,7 +1,12 @@
 # Backtracking 常规解题方法
 <https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)>
 
+
 This structure might apply to many other backtracking questions, but here I am just going to demonstrate Subsets, Permutations, and Combination Sum.
+
+
+## Time Complexity:
+https://stackoverflow.com/questions/31120402/complexity-when-generating-all-combinations
 
 ## Subsets : https://leetcode.com/problems/subsets/
 
@@ -170,3 +175,4 @@ public boolean isPalindrome(String s, int low, int high){
    return true;
 } 
 ```
+
