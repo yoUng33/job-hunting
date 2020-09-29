@@ -95,7 +95,7 @@ Sqrt(x)
 
  
 
-第四类： 用子函数当作判断关系（通常由 mid 计算得出）
+### 第四类： 用子函数当作判断关系（通常由 mid 计算得出）
 
 这是最令博主头疼的一类，而且通常情况下都很难。因为这里在二分查找法重要的比较大小的地方使用到了子函数，并不是之前三类中简单的数字大小的比较，比如 Split Array Largest Sum 那道题中的解法一，就是根据是否能分割数组来确定下一步搜索的范围。类似的还有 Guess Number Higher or Lower 这道题，是根据给定函数 guess 的返回值情况来确定搜索的范围。对于这类题目，博主也很无奈，遇到了只能自求多福了。
 
@@ -105,7 +105,7 @@ Split Array Largest Sum， Guess Number Higher or Lower，Find K Closest Element
 
  
 
-第五类： 其他（通常 target 值不固定）
+### 第五类： 其他（通常 target 值不固定）
 
 有些题目不属于上述的四类，但是还是需要用到二分搜索法，比如这道 Find Peak Element，求的是数组的局部峰值。由于是求的峰值，需要跟相邻的数字比较，那么 target 就不是一个固定的值，而且这道题的一定要注意的是 right 的初始化，一定要是 nums.size() - 1，这是由于算出了 mid 后，nums[mid] 要和 nums[mid+1] 比较，如果 right 初始化为 nums.size() 的话，mid+1 可能会越界，从而不能找到正确的值，同时 while 循环的终止条件必须是 left < right，不能有等号。
 
