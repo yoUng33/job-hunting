@@ -10,3 +10,9 @@ algorithm/leetcode/test/test.java
 algorithm/leetcode/test/output/production/harry-personal-projects/Solution.class
 .gitignore
 .gitignore
+algorithm/.idea/algorithm.iml
+algorithm/.idea/encodings.xml
+algorithm/.idea/misc.xml
+algorithm/.idea/modules.xml
+algorithm/.idea/vcs.xml
+algorithm/.idea/workspace.xml
